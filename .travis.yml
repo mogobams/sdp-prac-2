@@ -2,7 +2,7 @@ language: csharp
 dotnet: 16.4.5
 script:
    dotnet test Problems.Tests
-jobs:
+matrix:
    include:
       - dist: xenial
       - dist: bionic
