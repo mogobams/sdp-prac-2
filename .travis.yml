@@ -1,9 +1,9 @@
 language: csharp
-dotnet: 16.4.5
+os: osx
+dotnet: 3.1.101
 script:
    dotnet test Problems.Tests
-matrix:
+jobs:
    include:
       - dist: xenial
       - dist: bionic
-      - os: osx
