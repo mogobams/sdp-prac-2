@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj": {}
+    "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems.Tests\\Problems.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj": {
+    "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems.Tests\\Problems.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems.Tests\\Problems.Tests.csproj",
         "projectName": "Problems.Tests",
-        "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
+        "projectPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems.Tests\\Problems.Tests.csproj",
         "packagesPath": "C:\\Users\\Matlhatse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\obj\\",
+        "outputPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matlhatse\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj": {
-                "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj"
+              "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj": {
+                "projectPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj": {
+    "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+        "projectUniqueName": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj",
         "projectName": "Problems",
-        "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+        "projectPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj",
         "packagesPath": "C:\\Users\\Matlhatse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\obj\\",
+        "outputPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matlhatse\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj": {}
+    "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj": {
+    "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+        "projectUniqueName": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj",
         "projectName": "Problems",
-        "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+        "projectPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\Problems.csproj",
         "packagesPath": "C:\\Users\\Matlhatse\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\obj\\",
+        "outputPath": "C:\\Users\\matlhatse\\desktop\\Mystuff\\Problems\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Matlhatse\\AppData\\Roaming\\NuGet\\NuGet.Config",
