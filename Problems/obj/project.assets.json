@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\g17m4640\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Matlhatse\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+      "projectUniqueName": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
       "projectName": "Problems",
-      "projectPath": "J:\\Desktop\\MyStuff\\Problems\\Problems.csproj",
-      "packagesPath": "C:\\Users\\g17m4640\\.nuget\\packages\\",
-      "outputPath": "J:\\Desktop\\MyStuff\\Problems\\obj\\",
+      "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj",
+      "packagesPath": "C:\\Users\\Matlhatse\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\g17m4640\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Matlhatse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

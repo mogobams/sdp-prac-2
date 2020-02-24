@@ -9,3 +9,14 @@ J:\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.AssemblyInfoInputs.
 J:\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.AssemblyInfo.cs
 J:\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.dll
 J:\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.pdb
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.csprojAssemblyReference.cache
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.AssemblyInfoInputs.cache
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.AssemblyInfo.cs
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.dll
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\obj\Debug\netcoreapp3.1\Problems.pdb
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.exe
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.deps.json
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.runtimeconfig.json
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.runtimeconfig.dev.json
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.dll
+C:\Users\Matlhatse\Desktop\MyStuff\Problems\bin\Debug\netcoreapp3.1\Problems.pdb

@@ -1225,6 +1225,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Problems/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Problems.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Problems.dll": {}
+        }
       }
     }
   },
@@ -4567,33 +4577,35 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "Problems/1.0.0": {
+      "type": "project",
+      "path": "../Problems/Problems.csproj",
+      "msbuildProject": "../Problems/Problems.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.NET.Test.Sdk >= 16.4.0",
       "NUnit3TestAdapter >= 3.15.1",
+      "Problems >= 1.0.0",
       "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\g17m4640\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Matlhatse\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "J:\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
       "projectName": "Problems.Tests",
-      "projectPath": "J:\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
-      "packagesPath": "C:\\Users\\g17m4640\\.nuget\\packages\\",
-      "outputPath": "J:\\Desktop\\MyStuff\\Problems.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\Problems.Tests.csproj",
+      "packagesPath": "C:\\Users\\Matlhatse\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\g17m4640\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Matlhatse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4605,7 +4617,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj": {
+              "projectPath": "C:\\Users\\Matlhatse\\Desktop\\MyStuff\\Problems\\Problems.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

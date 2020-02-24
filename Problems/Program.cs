@@ -4,18 +4,22 @@ namespace Problems
 {
     public class Program
     {
-        static void Prefix(string input)
+        public string Prefix(string input)
         {
+            string result = "";
             int length = input.Length;
-            int words = input.Split(' ').Length;
+            int words = input.Split(new char [] { ' ', '\t'}, StringSplitOptions.RemoveEmptyEntries).Length;
 
-            Console.WriteLine(length + "," + words + ":" + input);
+            result = length + "," + words + ":" + input;
+
+            return result;
         }
 
         static void Main(string[] args)
         {
-            string name = "what  ... did you say?";
-            Prefix(name);
+            Program ans = new Program();
+            ans.Prefix("");
+
         }
     }
 }
