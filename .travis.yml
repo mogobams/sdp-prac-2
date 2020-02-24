@@ -7,4 +7,4 @@ matrix:
       - dist: xenial
       - dist: bionic
       - dotnet: 16.4.5
-      - os: osx
+        os: osx
