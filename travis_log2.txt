@@ -1,0 +1,768 @@
+travis_fold:start:worker_info[0K[33;1mWorker information[0m
+hostname: 5b88a623-16b0-4fcd-b1f2-c9a232bc1a2c@1.worker-org-6bc68c5dcd-c8tk9.macstadium-prod-2
+version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
+instance: d19a1884-9a73-48e2-95c2-126bceef6afe travis-ci-macos10.13-xcode9.4.1-19-1576204381 (via amqp)
+startup: 1m18.376092963s
+travis_fold:end:worker_info[0Ktravis_time:start:1ab3c954[0Ktravis_time:end:1ab3c954:start=1582575724498159000,finish=1582575725150401000,duration=652242000,event=no_world_writable_dirs[0Ktravis_time:start:00016252[0Ktravis_time:end:00016252:start=1582575725164013000,finish=1582575725174530000,duration=10517000,event=check_unsupported[0Ktravis_time:start:16b3d050[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
+Build language: csharp
+Build id: 654592667
+Job id: 654592669
+Runtime kernel version: 17.7.0
+travis-build version: ad8144f58
+[34m[1mBuild image provisioning date and time[0m
+Fri Dec 13 04:54:58 GMT 2019
+[34m[1mOperating System Details[0m
+ProductName:	Mac OS X
+ProductVersion:	10.13.6
+BuildVersion:	17G65
+[34m[1mGit version[0m
+git version 2.24.1
+[34m[1mbash version[0m
+GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
+Copyright (C) 2007 Free Software Foundation, Inc.
+[34m[1mGCC version[0m
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mLLVM version[0m
+Apple LLVM version 9.1.0 (clang-902.0.39.2)
+Target: x86_64-apple-darwin17.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+[34m[1mPre-installed Ruby versions[0m
+ruby-2.6.3
+[34m[1mPre-installed Node.js versions[0m
+v10.17.0
+v12.13.0
+v12.13.1
+v13.0.1
+v4.9.1
+v6.17.1
+v8.16.2
+[34m[1mmvn -version[0m
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/local/Cellar/maven/3.6.3/libexec
+Java version: 13.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
+Default locale: en_US, platform encoding: UTF-8
+OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
+travis_fold:end:system_info[0K
+travis_time:end:16b3d050:start=1582575725187398000,finish=1582575725211088000,duration=23690000,event=show_system_info[0Ktravis_time:start:02e0bc2d[0Ktravis_time:end:02e0bc2d:start=1582575725224037000,finish=1582575725234882000,duration=10845000,event=rm_riak_source[0Ktravis_time:start:28ff0808[0Ktravis_time:end:28ff0808:start=1582575725247817000,finish=1582575725258596000,duration=10779000,event=fix_rwky_redis[0Ktravis_time:start:094a7bd0[0Ktravis_time:end:094a7bd0:start=1582575725271667000,finish=1582575725677791000,duration=406124000,event=wait_for_network[0Ktravis_time:start:0be20fa8[0Ktravis_time:end:0be20fa8:start=1582575725689566000,finish=1582575725696848000,duration=7282000,event=update_apt_keys[0Ktravis_time:start:1b266f15[0Ktravis_time:end:1b266f15:start=1582575725709666000,finish=1582575725721381000,duration=11715000,event=fix_hhvm_source[0Ktravis_time:start:029d7a40[0Ktravis_time:end:029d7a40:start=1582575725732493000,finish=1582575725743640000,duration=11147000,event=update_mongo_arch[0Ktravis_time:start:000fca00[0Ktravis_time:end:000fca00:start=1582575725756355000,finish=1582575725769861000,duration=13506000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0609ef5b[0Ktravis_time:end:0609ef5b:start=1582575725778817000,finish=1582575725785615000,duration=6798000,event=update_glibc[0Ktravis_time:start:0f1c73dc[0Ktravis_time:end:0f1c73dc:start=1582575725794596000,finish=1582575725880367000,duration=85771000,event=clean_up_path[0Ktravis_time:start:1c67cd90[0Ktravis_time:end:1c67cd90:start=1582575725891670000,finish=1582575725946626000,duration=54956000,event=fix_resolv_conf[0Ktravis_time:start:037a8089[0Ktravis_time:end:037a8089:start=1582575725956200000,finish=1582575726030432000,duration=74232000,event=fix_etc_hosts[0Ktravis_time:start:0de14eae[0Ktravis_time:end:0de14eae:start=1582575726045844000,finish=1582575726056806000,duration=10962000,event=fix_mvn_settings_xml[0Ktravis_time:start:105e4eca[0Ktravis_time:end:105e4eca:start=1582575726069886000,finish=1582575726122513000,duration=52627000,event=no_ipv6_localhost[0Ktravis_time:start:226279de[0Ktravis_time:end:226279de:start=1582575726131864000,finish=1582575726141068000,duration=9204000,event=fix_etc_mavenrc[0Ktravis_time:start:05f4928e[0Ktravis_time:end:05f4928e:start=1582575726150222000,finish=1582575726447398000,duration=297176000,event=fix_wwdr_certificate[0Ktravis_time:start:07953359[0Ktravis_time:end:07953359:start=1582575726458779000,finish=1582575726654929000,duration=196150000,event=put_localhost_first[0Ktravis_time:start:08aaab47[0Ktravis_time:end:08aaab47:start=1582575726673849000,finish=1582575726682365000,duration=8516000,event=home_paths[0Ktravis_time:start:3a73d940[0Ktravis_time:end:3a73d940:start=1582575726691493000,finish=1582575726706025000,duration=14532000,event=disable_initramfs[0Ktravis_time:start:008ed9eb[0Ktravis_time:end:008ed9eb:start=1582575726715075000,finish=1582575726744500000,duration=29425000,event=disable_ssh_roaming[0Ktravis_time:start:035a6ae6[0Ktravis_time:end:035a6ae6:start=1582575726762516000,finish=1582575726773036000,duration=10520000,event=debug_tools[0Ktravis_time:start:2a9db5d7[0K
+travis_time:end:2a9db5d7:start=1582575726786707000,finish=1582575731093347000,duration=4306640000,event=uninstall_oclint[0Ktravis_time:start:04fc15d5[0Ktravis_time:end:04fc15d5:start=1582575731101865000,finish=1582575732221848000,duration=1119983000,event=rvm_use[0Ktravis_time:start:0cc360c0[0Ktravis_time:end:0cc360c0:start=1582575732230884000,finish=1582575732280165000,duration=49281000,event=rm_etc_boto_cfg[0Ktravis_time:start:1fbe7daa[0Ktravis_time:end:1fbe7daa:start=1582575732289294000,finish=1582575732296771000,duration=7477000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:05432f04[0Ktravis_time:end:05432f04:start=1582575732305882000,finish=1582575732326325000,duration=20443000,event=enable_i386[0Ktravis_time:start:35a3c322[0Ktravis_time:end:35a3c322:start=1582575732342931000,finish=1582575732364129000,duration=21198000,event=update_rubygems[0Ktravis_time:start:033e034e[0Ktravis_time:end:033e034e:start=1582575732381911000,finish=1582575732410874000,duration=28963000,event=ensure_path_components[0Ktravis_time:start:01991436[0Ktravis_time:end:01991436:start=1582575732420266000,finish=1582575732427867000,duration=7601000,event=redefine_curl[0Ktravis_time:start:236f04e0[0Ktravis_time:end:236f04e0:start=1582575732436996000,finish=1582575732444289000,duration=7293000,event=nonblock_pipe[0Ktravis_time:start:06ed6800[0Ktravis_time:end:06ed6800:start=1582575732453330000,finish=1582575732465368000,duration=12038000,event=apt_get_update[0Ktravis_time:start:359d2ea3[0Ktravis_time:end:359d2ea3:start=1582575732478994000,finish=1582575732491818000,duration=12824000,event=deprecate_xcode_64[0Ktravis_time:start:0fe90216[0Ktravis_time:end:0fe90216:start=1582575732509271000,finish=1582575732525198000,duration=15927000,event=update_heroku[0Ktravis_time:start:170ddfe2[0Ktravis_time:end:170ddfe2:start=1582575732534456000,finish=1582575732541901000,duration=7445000,event=shell_session_update[0Ktravis_time:start:01b80fdc[0Ktravis_time:end:01b80fdc:start=1582575732551269000,finish=1582575732558656000,duration=7387000,event=maven_central_mirror[0Ktravis_time:start:25e1f6d0[0Ktravis_time:end:25e1f6d0:start=1582575732568393000,finish=1582575732576164000,duration=7771000,event=maven_https[0K
+[31;1mC# support for Travis-CI is community maintained.[0m
+[31;1mPlease open any issues at https://travis-ci.community/c/languages/37-category and cc @joshua-anderson @akoeplinger @nterry[0m
+travis_fold:start:mono-install[0K[33;1mInstalling Mono[0m
+travis_time:start:07597cc3[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/mdk.pkg http://download.mono-project.com/archive/mdk-latest.pkg
+--2020-02-24 20:22:12--  http://download.mono-project.com/archive/mdk-latest.pkg
+Resolving download.mono-project.com (download.mono-project.com)... 72.21.81.200
+Connecting to download.mono-project.com (download.mono-project.com)|72.21.81.200|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 362022327 (345M) [application/octet-stream]
+Saving to: ‘/tmp/mdk.pkg’
+
+/tmp/mdk.pkg          0%[                    ]       0  --.-KB/s               /tmp/mdk.pkg          6%[>                   ]  22.56M   113MB/s               /tmp/mdk.pkg         13%[=>                  ]  46.01M   115MB/s               /tmp/mdk.pkg         21%[===>                ]  74.34M   124MB/s               /tmp/mdk.pkg         28%[====>               ]  98.01M   122MB/s               /tmp/mdk.pkg         36%[======>             ] 125.96M   126MB/s               /tmp/mdk.pkg         44%[=======>            ] 152.24M   127MB/s               /tmp/mdk.pkg         51%[=========>          ] 179.30M   128MB/s               /tmp/mdk.pkg         59%[==========>         ] 204.79M   128MB/s               /tmp/mdk.pkg         64%[===========>        ] 224.12M   124MB/s               /tmp/mdk.pkg         70%[=============>      ] 244.77M   122MB/s               /tmp/mdk.pkg         76%[==============>     ] 263.29M   120MB/s               /tmp/mdk.pkg         82%[===============>    ] 283.83M   118MB/s               /tmp/mdk.pkg         87%[================>   ] 303.72M   117MB/s               /tmp/mdk.pkg         93%[=================>  ] 322.88M   115MB/s               /tmp/mdk.pkg         99%[==================> ] 344.73M   115MB/s    eta 0s     /tmp/mdk.pkg        100%[===================>] 345.25M   115MB/s    in 3.0s    
+
+2020-02-24 20:22:15 (115 MB/s) - ‘/tmp/mdk.pkg’ saved [362022327/362022327]
+
+travis_time:end:07597cc3:start=1582575732587284000,finish=1582575735657367000,duration=3070083000,event=configure[0Ktravis_time:start:0a097620[0Kinstaller: Package name is Mono Framework
+installer: Installing at base path /
+installer:PHASE:Preparing for installation…
+installer:PHASE:Preparing the disk…
+installer:PHASE:Preparing Mono Framework…
+installer:PHASE:Waiting for other installations to complete…
+installer:PHASE:Configuring the installation…
+installer:STATUS:
+installer:%3.875013
+installer:PHASE:Writing files…
+installer:%4.398538
+installer:PHASE:Writing files…
+installer:%5.098551
+installer:PHASE:Writing files…
+installer:%5.798564
+installer:PHASE:Writing files…
+installer:%7.198590
+installer:PHASE:Writing files…
+installer:%7.898603
+installer:PHASE:Writing files…
+installer:%8.598616
+installer:PHASE:Writing files…
+installer:%9.998642
+installer:PHASE:Writing files…
+installer:%10.698655
+installer:PHASE:Writing files…
+installer:%11.398668
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%12.098681
+installer:PHASE:Writing files…
+installer:%13.498707
+installer:PHASE:Writing files…
+installer:%14.198720
+installer:PHASE:Writing files…
+installer:%14.898733
+installer:PHASE:Writing files…
+installer:%15.598746
+installer:PHASE:Writing files…
+installer:%16.998772
+installer:PHASE:Writing files…
+installer:%17.698785
+installer:PHASE:Writing files…
+installer:%18.398798
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%19.098811
+installer:PHASE:Writing files…
+installer:%19.798824
+installer:PHASE:Writing files…
+installer:%20.498837
+installer:PHASE:Writing files…
+installer:%21.198850
+installer:PHASE:Writing files…
+installer:%21.898863
+installer:PHASE:Writing files…
+installer:%23.298889
+installer:PHASE:Writing files…
+installer:%23.998902
+installer:PHASE:Writing files…
+installer:%25.398928
+installer:PHASE:Writing files…
+installer:%26.098942
+installer:PHASE:Writing files…
+installer:%26.798955
+installer:PHASE:Writing files…
+installer:%27.498968
+installer:PHASE:Writing files…
+installer:%28.198981
+installer:PHASE:Writing files…
+installer:%28.898994
+installer:PHASE:Writing files…
+installer:%29.599007
+installer:PHASE:Writing files…
+installer:%30.999033
+installer:PHASE:Writing files…
+installer:%31.699046
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%32.399059
+installer:PHASE:Writing files…
+installer:%33.099072
+installer:PHASE:Writing files…
+installer:%33.799085
+installer:PHASE:Writing files…
+installer:%34.499098
+installer:PHASE:Writing files…
+installer:%35.199111
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%36.599137
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%37.299150
+installer:PHASE:Writing files…
+installer:%37.999163
+installer:PHASE:Writing files…
+installer:%38.699176
+installer:PHASE:Writing files…
+installer:%39.399189
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%40.099202
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%40.799215
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%41.499228
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%42.199241
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%42.899254
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%43.599267
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%44.299280
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%44.999293
+installer:PHASE:Writing files…
+installer:%45.699306
+installer:PHASE:Writing files…
+installer:%46.399319
+installer:PHASE:Writing files…
+installer:%47.099332
+installer:PHASE:Writing files…
+installer:%47.799345
+installer:PHASE:Writing files…
+installer:%48.499358
+installer:PHASE:Writing files…
+installer:%49.199371
+installer:PHASE:Writing files…
+installer:%49.899384
+installer:PHASE:Writing files…
+installer:%50.599397
+installer:PHASE:Writing files…
+installer:%51.299411
+installer:PHASE:Writing files…
+installer:%51.999424
+installer:PHASE:Writing files…
+installer:%52.699437
+installer:PHASE:Writing files…
+installer:%53.399450
+installer:PHASE:Writing files…
+installer:%54.099463
+installer:PHASE:Writing files…
+installer:%54.799476
+installer:PHASE:Writing files…
+installer:%55.499489
+installer:PHASE:Writing files…
+installer:%56.199502
+installer:PHASE:Writing files…
+installer:%56.899515
+installer:PHASE:Writing files…
+installer:%57.599528
+installer:PHASE:Writing files…
+installer:%58.299541
+installer:PHASE:Writing files…
+installer:%58.999554
+installer:PHASE:Writing files…
+installer:%59.699567
+installer:PHASE:Writing files…
+installer:%61.099593
+installer:PHASE:Writing files…
+installer:%61.799606
+installer:PHASE:Writing files…
+installer:%62.499619
+installer:PHASE:Writing files…
+installer:%63.199632
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%63.899645
+installer:PHASE:Writing files…
+installer:%64.599658
+installer:PHASE:Writing files…
+installer:%65.299671
+installer:PHASE:Writing files…
+installer:%65.999684
+installer:PHASE:Writing files…
+installer:%66.699697
+installer:PHASE:Writing files…
+installer:%67.399710
+installer:PHASE:Writing files…
+installer:%68.099723
+installer:PHASE:Writing files…
+installer:%68.799736
+installer:PHASE:Writing files…
+installer:%69.499749
+installer:PHASE:Writing files…
+installer:%70.899775
+installer:PHASE:Writing files…
+installer:%71.599788
+installer:PHASE:Writing files…
+installer:%72.999814
+installer:PHASE:Writing files…
+installer:%73.699827
+installer:PHASE:Writing files…
+installer:%75.099853
+installer:PHASE:Writing files…
+installer:%75.799866
+installer:PHASE:Writing files…
+installer:%76.499880
+installer:PHASE:Writing files…
+installer:%77.899906
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%78.599919
+installer:PHASE:Writing files…
+installer:%79.299932
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%79.999945
+installer:PHASE:Writing files…
+installer:%93.300743
+installer:PHASE:Running package scripts…
+installer:%93.648731
+installer:PHASE:Running package scripts…
+installer:%93.992518
+installer:PHASE:Running package scripts…
+installer:%94.000205
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:PHASE:Running package scripts…
+installer:%94.260628
+installer:PHASE:Writing package receipts…
+installer:PHASE:Validating packages…
+installer:%97.750000
+installer:STATUS:Running installer actions…
+installer:STATUS:
+installer:PHASE:Finishing the Installation…
+installer:STATUS:
+installer:%100.000000
+installer:PHASE:The software was successfully installed.
+installer: The install was successful.
+travis_time:end:0a097620:start=1582575735667602000,finish=1582575927225109000,duration=191557507000,event=configure[0Ktravis_fold:end:mono-install[0Ktravis_fold:start:dotnet-install[0K[33;1mInstalling .NET Core[0m
+$ export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1
+$ export DOTNET_CLI_TELEMETRY_OPTOUT=1
+travis_time:start:2adbe2a4[0K$ wget --retry-connrefused --waitretry=1 -O /tmp/dotnet.pkg https://dotnetcli.azureedge.net/dotnet/Sdk/3.1.101/dotnet-sdk-3.1.101-osx-x64.pkg
+--2020-02-24 20:25:27--  https://dotnetcli.azureedge.net/dotnet/Sdk/3.1.101/dotnet-sdk-3.1.101-osx-x64.pkg
+Resolving dotnetcli.azureedge.net (dotnetcli.azureedge.net)... 72.21.81.200
+Connecting to dotnetcli.azureedge.net (dotnetcli.azureedge.net)|72.21.81.200|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 112236702 (107M) [application/octet-stream]
+Saving to: ‘/tmp/dotnet.pkg’
+
+/tmp/dotnet.pkg       0%[                    ]       0  --.-KB/s               /tmp/dotnet.pkg      14%[=>                  ]  16.01M  75.4MB/s               /tmp/dotnet.pkg      29%[====>               ]  32.01M  76.1MB/s               /tmp/dotnet.pkg      44%[=======>            ]  47.12M  75.9MB/s               /tmp/dotnet.pkg      58%[==========>         ]  62.82M  76.5MB/s               /tmp/dotnet.pkg      71%[=============>      ]  76.19M  74.6MB/s               /tmp/dotnet.pkg      85%[================>   ]  91.13M  74.6MB/s               /tmp/dotnet.pkg      98%[==================> ] 105.13M  74.0MB/s               /tmp/dotnet.pkg     100%[===================>] 107.04M  74.0MB/s    in 1.4s    
+
+2020-02-24 20:25:28 (74.0 MB/s) - ‘/tmp/dotnet.pkg’ saved [112236702/112236702]
+
+travis_time:end:2adbe2a4:start=1582575927266903000,finish=1582575928826205000,duration=1559302000,event=configure[0Ktravis_time:start:0c5cab10[0Kinstaller: Package name is Microsoft .NET Core SDK 3.1.101 (x64)
+installer: Installing at base path /
+installer:PHASE:Preparing for installation…
+installer:PHASE:Preparing the disk…
+installer:PHASE:Preparing Microsoft .NET Core SDK 3.1.101 (x64)…
+installer:PHASE:Waiting for other installations to complete…
+installer:PHASE:Configuring the installation…
+installer:STATUS:
+installer:%6.220122
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%7.704159
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%9.188197
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%10.672235
+installer:PHASE:Writing files…
+installer:%12.156272
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%13.640310
+installer:PHASE:Writing files…
+installer:%15.124348
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%16.608385
+installer:PHASE:Writing files…
+installer:%18.092423
+installer:PHASE:Writing files…
+installer:%19.576461
+installer:PHASE:Writing files…
+installer:%21.060498
+installer:PHASE:Writing files…
+installer:%22.544536
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%24.028574
+installer:PHASE:Writing files…
+installer:%25.512611
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%26.996649
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%28.480687
+installer:PHASE:Writing files…
+installer:%29.964724
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%31.448762
+installer:PHASE:Writing files…
+installer:%32.932800
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%34.416838
+installer:PHASE:Writing files…
+installer:%35.900875
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%37.384913
+installer:PHASE:Writing files…
+installer:%38.868951
+installer:PHASE:Writing files…
+installer:%40.352988
+installer:PHASE:Writing files…
+installer:%41.837026
+installer:PHASE:Writing files…
+installer:%43.321064
+installer:PHASE:Writing files…
+installer:%44.805101
+installer:PHASE:Writing files…
+installer:%46.289139
+installer:PHASE:Writing files…
+installer:%47.773177
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%49.257214
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%50.741252
+installer:PHASE:Writing files…
+installer:PHASE:Writing files…
+installer:%52.225290
+installer:PHASE:Writing files…
+installer:%84.206923
+installer:PHASE:Running package scripts…
+installer:%84.862534
+installer:PHASE:Running package scripts…
+installer:%92.446720
+installer:PHASE:Writing package receipts…
+installer:PHASE:Validating packages…
+installer:%97.750000
+installer:STATUS:Running installer actions…
+installer:STATUS:
+installer:PHASE:Finishing the Installation…
+installer:STATUS:
+installer:%100.000000
+installer:PHASE:The software was successfully installed.
+installer: The install was successful.
+travis_time:end:0c5cab10:start=1582575928840380000,finish=1582575957140600000,duration=28300220000,event=configure[0Ktravis_fold:end:dotnet-install[0Ktravis_time:start:04e2e920[0Ktravis_time:end:04e2e920:start=1582575957156892000,finish=1582575957164230000,duration=7338000,event=fix_ps4[0Ktravis_time:start:0df7924d[0K
+travis_fold:start:git.checkout[0Ktravis_time:start:0e95ea36[0K$ git clone --depth=50 --branch=master https://github.com/mogobams/sdp-prac-2.git mogobams/sdp-prac-2
+Cloning into 'mogobams/sdp-prac-2'...
+remote: Enumerating objects: 237, done.[K
+remote: Counting objects:   0% (1/237)[Kremote: Counting objects:   1% (3/237)[Kremote: Counting objects:   2% (5/237)[Kremote: Counting objects:   3% (8/237)[Kremote: Counting objects:   4% (10/237)[Kremote: Counting objects:   5% (12/237)[Kremote: Counting objects:   6% (15/237)[Kremote: Counting objects:   7% (17/237)[Kremote: Counting objects:   8% (19/237)[Kremote: Counting objects:   9% (22/237)[Kremote: Counting objects:  10% (24/237)[Kremote: Counting objects:  11% (27/237)[Kremote: Counting objects:  12% (29/237)[Kremote: Counting objects:  13% (31/237)[Kremote: Counting objects:  14% (34/237)[Kremote: Counting objects:  15% (36/237)[Kremote: Counting objects:  16% (38/237)[Kremote: Counting objects:  17% (41/237)[Kremote: Counting objects:  18% (43/237)[Kremote: Counting objects:  19% (46/237)[Kremote: Counting objects:  20% (48/237)[Kremote: Counting objects:  21% (50/237)[Kremote: Counting objects:  22% (53/237)[Kremote: Counting objects:  23% (55/237)[Kremote: Counting objects:  24% (57/237)[Kremote: Counting objects:  25% (60/237)[Kremote: Counting objects:  26% (62/237)[Kremote: Counting objects:  27% (64/237)[Kremote: Counting objects:  28% (67/237)[Kremote: Counting objects:  29% (69/237)[Kremote: Counting objects:  30% (72/237)[Kremote: Counting objects:  31% (74/237)[Kremote: Counting objects:  32% (76/237)[Kremote: Counting objects:  33% (79/237)[Kremote: Counting objects:  34% (81/237)[Kremote: Counting objects:  35% (83/237)[Kremote: Counting objects:  36% (86/237)[Kremote: Counting objects:  37% (88/237)[Kremote: Counting objects:  38% (91/237)[Kremote: Counting objects:  39% (93/237)[Kremote: Counting objects:  40% (95/237)[Kremote: Counting objects:  41% (98/237)[Kremote: Counting objects:  42% (100/237)remote: Counting objects:  43% (102/237)[Kremote: Counting objects:  44% (105/237)[Kremote: Counting objects:  45% (107/237)[Kremote: Counting objects:  46% (110/237)[Kremote: Counting objects:  47% (112/237)[Kremote: Counting objects:  48% (114/237)[Kremote: Counting objects:  49% (117/237)[Kremote: Counting objects:  50% (119/237)[Kremote: Counting objects:  51% (121/237)[Kremote: Counting objects:  52% (124/237)[Kremote: Counting objects:  53% (126/237)[Kremote: Counting objects:  54% (128/237)[Kremote: Counting objects:  55% (131/237)[Kremote: Counting objects:  56% (133/237)[Kremote: Counting objects:  57% (136/237)[Kremote: Counting objects:  58% (138/237)[Kremote: Counting objects:  59% (140/237)[Kremote: Counting objects:  60% (143/237)[Kremote: Counting objects:  61% (145/237)[Kremote: Counting objects:  62% (147/237)[Kremote: Counting objects:  63% (150/237)[Kremote: Counting objects:  64% (152/237)[Kremote: Counting objects:  65% (155/237)[Kremote: Counting objects:  66% (157/237)[Kremote: Counting objects:  67% (159/237)[Kremote: Counting objects:  68% (162/237)[Kremote: Counting objects:  69% (164/237)[Kremote: Counting objects:  70% (166/237)[Kremote: Counting objects:  71% (169/237)[Kremote: Counting objects:  72% (171/237)[Kremote: Counting objects:  73% (174/237)[Kremote: Counting objects:  74% (176/237)[Kremote: Counting objects:  75% (178/237)[Kremote: Counting objects:  76% (181/237)[Kremote: Counting objects:  77% (183/237)[Kremote: Counting objects:  78% (185/237)[Kremote: Counting objects:  79% (188/237)[Kremote: Counting objects:  80% (190/237)[Kremote: Counting objects:  81% (192/237)[Kremote: Counting objects:  82% (195/237)[Kremote: Counting objects:  83% (197/237)[Kremote: Counting objects:  84% (200/237)[Kremote: Counting objects:  85% (202/237)[Kremote: Counting objects:  86% (204/237)[Kremote: Counting objects:  87% (207/237)[Kremote: Counting objects:  88% (209/237)[Kremote: Counting objects:  89% (211/237)[Kremote: Counting objects:  90% (214/237)[Kremote: Counting objects:  91% (216/237)[Kremote: Counting objects:  92% (219/237)[Kremote: Counting objects:  93% (221/237)[Kremote: Counting objects:  94% (223/237)[Kremote: Counting objects:  95% (226/237)[Kremote: Counting objects:  96% (228/237)[Kremote: Counting objects:  97% (230/237)[Kremote: Counting objects:  98% (233/237)[Kremote: Counting objects:  99% (235/237)[Kremote: Counting objects: 100% (237/237)[Kremote: Counting objects: 100% (237/237), done.[K
+remote: Compressing objects:   0% (1/107)[Kremote: Compressing objects:   1% (2/107)[Kremote: Compressing objects:   2% (3/107)[Kremote: Compressing objects:   3% (4/107)[Kremote: Compressing objects:   4% (5/107)[Kremote: Compressing objects:   5% (6/107)[Kremote: Compressing objects:   6% (7/107)[Kremote: Compressing objects:   7% (8/107)[Kremote: Compressing objects:   8% (9/107)[Kremote: Compressing objects:   9% (10/107)[Kremote: Compressing objects:  10% (11/107)[Kremote: Compressing objects:  11% (12/107)[Kremote: Compressing objects:  12% (13/107)[Kremote: Compressing objects:  13% (14/107)[Kremote: Compressing objects:  14% (15/107)[Kremote: Compressing objects:  15% (17/107)[Kremote: Compressing objects:  16% (18/107)[Kremote: Compressing objects:  17% (19/107)[Kremote: Compressing objects:  18% (20/107)[Kremote: Compressing objects:  19% (21/107)[Kremote: Compressing objects:  20% (22/107)[Kremote: Compressing objects:  21% (23/107)[Kremote: Compressing objects:  22% (24/107)[Kremote: Compressing objects:  23% (25/107)[Kremote: Compressing objects:  24% (26/107)[Kremote: Compressing objects:  25% (27/107)[Kremote: Compressing objects:  26% (28/107)[Kremote: Compressing objects:  27% (29/107)[Kremote: Compressing objects:  28% (30/107)[Kremote: Compressing objects:  29% (32/107)[Kremote: Compressing objects:  30% (33/107)[Kremote: Compressing objects:  31% (34/107)[Kremote: Compressing objects:  32% (35/107)[Kremote: Compressing objects:  33% (36/107)[Kremote: Compressing objects:  34% (37/107)[Kremote: Compressing objects:  35% (38/107)[Kremote: Compressing objects:  36% (39/107)[Kremote: Compressing objects:  37% (40/107)[Kremote: Compressing objects:  38% (41/107)[Kremote: Compressing objects:  39% (42/107)[Kremote: Compressing objects:  40% (43/107)[Kremote: Compressing objects:  41% (44/107)[Kremote: Compressing objects:  42% (45/107)[Kremote: Compressing objects:  43% (47/107)[Kremote: Compressing objects:  44% (48/107)[Kremote: Compressing objects:  45% (49/107)[Kremote: Compressing objects:  46% (50/107)[Kremote: Compressing objects:  47% (51/107)[Kremote: Compressing objects:  48% (52/107)[Kremote: Compressing objects:  49% (53/107)[Kremote: Compressing objects:  50% (54/107)[Kremote: Compressing objects:  51% (55/107)[Kremote: Compressing objects:  52% (56/107)[Kremote: Compressing objects:  53% (57/107)[Kremote: Compressing objects:  54% (58/107)[Kremote: Compressing objects:  55% (59/107)[Kremote: Compressing objects:  56% (60/107)[Kremote: Compressing objects:  57% (61/107)[Kremote: Compressing objects:  58% (63/107)[Kremote: Compressing objects:  59% (64/107)[Kremote: Compressing objects:  60% (65/107)[Kremote: Compressing objects:  61% (66/107)[Kremote: Compressing objects:  62% (67/107)[Kremote: Compressing objects:  63% (68/107)[Kremote: Compressing objects:  64% (69/107)[Kremote: Compressing objects:  65% (70/107)[Kremote: Compressing objects:  66% (71/107)[Kremote: Compressing objects:  67% (72/107)[Kremote: Compressing objects:  68% (73/107)[Kremote: Compressing objects:  69% (74/107)[Kremote: Compressing objects:  70% (75/107)[Kremote: Compressing objects:  71% (76/107)[Kremote: Compressing objects:  72% (78/107)[Kremote: Compressing objects:  73% (79/107)[Kremote: Compressing objects:  74% (80/107)[Kremote: Compressing objects:  75% (81/107)[Kremote: Compressing objects:  76% (82/107)[Kremote: Compressing objects:  77% (83/107)[Kremote: Compressing objects:  78% (84/107)[Kremote: Compressing objects:  79% (85/107)[Kremote: Compressing objects:  80% (86/107)[Kremote: Compressing objects:  81% (87/107)[Kremote: Compressing objects:  82% (88/107)[Kremote: Compressing objects:  83% (89/107)[Kremote: Compressing objects:  84% (90/107)[Kremote: Compressing objects:  85% (91/107)[Kremote: Compressing objects:  86% (93/107)[Kremote: Compressing objects:  87% (94/107)[Kremote: Compressing objects:  88% (95/107)[Kremote: Compressing objects:  89% (96/107)[Kremote: Compressing objects:  90% (97/107)[Kremote: Compressing objects:  91% (98/107)[Kremote: Compressing objects:  92% (99/107)[Kremote: Compressing objects:  93% (100/107)[Kremote: Compressing objects:  94% (101/107)[Kremote: Compressing objects:  95% (102/107)[Kremote: Compressing objects:  96% (103/107)[Kremote: Compressing objects:  97% (104/107)[Kremote: Compressing objects:  98% (105/107)[Kremote: Compressing objects:  99% (106/107)[Kremote: Compressing objects: 100% (107/107)[Kremote: Compressing objects: 100% (107/107), done.[K
+Receiving objects:   0% (1/237)Receiving objects:   1% (3/237)Receiving objects:   2% (5/237)Receiving objects:   3% (8/237)Receiving objects:   4% (10/237)Receiving objects:   5% (12/237)Receiving objects:   6% (15/237)Receiving objects:   7% (17/237)Receiving objects:   8% (19/237)Receiving objects:   9% (22/237)Receiving objects:  10% (24/237)Receiving objects:  11% (27/237)Receiving objects:  12% (29/237)Receiving objects:  13% (31/237)Receiving objects:  14% (34/237)Receiving objects:  15% (36/237)Receiving objects:  16% (38/237)Receiving objects:  17% (41/237)Receiving objects:  18% (43/237)Receiving objects:  19% (46/237)Receiving objects:  20% (48/237)Receiving objects:  21% (50/237)Receiving objects:  22% (53/237)Receiving objects:  23% (55/237)Receiving objects:  24% (57/237)Receiving objects:  25% (60/237)Receiving objects:  26% (62/237)Receiving objects:  27% (64/237)Receiving objects:  28% (67/237)Receiving objects:  29% (69/237)Receiving objects:  30% (72/237)Receiving objects:  31% (74/237)Receiving objects:  32% (76/237)Receiving objects:  33% (79/237)Receiving objects:  34% (81/237)Receiving objects:  35% (83/237)Receiving objects:  36% (86/237)Receiving objects:  37% (88/237)Receiving objects:  38% (91/237)Receiving objects:  39% (93/237)Receiving objects:  40% (95/237)Receiving objects:  41% (98/237)Receiving objects:  42% (100/237)Receiving objects:  43% (102/237)Receiving objects:  44% (105/237)Receiving objects:  45% (107/237)Receiving objects:  46% (110/237)Receiving objects:  47% (112/237)Receiving objects:  48% (114/237)Receiving objects:  49% (117/237)Receiving objects:  50% (119/237)Receiving objects:  51% (121/237)Receiving objects:  52% (124/237)Receiving objects:  53% (126/237)Receiving objects:  54% (128/237)Receiving objects:  55% (131/237)Receiving objects:  56% (133/237)Receiving objects:  57% (136/237)Receiving objects:  58% (138/237)Receiving objects:  59% (140/237)Receiving objects:  60% (143/237)Receiving objects:  61% (145/237)Receiving objects:  62% (147/237)Receiving objects:  63% (150/237)Receiving objects:  64% (152/237)Receiving objects:  65% (155/237)Receiving objects:  66% (157/237)Receiving objects:  67% (159/237)Receiving objects:  68% (162/237)Receiving objects:  69% (164/237)Receiving objects:  70% (166/237)Receiving objects:  71% (169/237)Receiving objects:  72% (171/237)Receiving objects:  73% (174/237)Receiving objects:  74% (176/237)Receiving objects:  75% (178/237)Receiving objects:  76% (181/237)Receiving objects:  77% (183/237)Receiving objects:  78% (185/237)Receiving objects:  79% (188/237)Receiving objects:  80% (190/237)Receiving objects:  81% (192/237)Receiving objects:  82% (195/237)Receiving objects:  83% (197/237)remote: Total 237 (delta 126), reused 222 (delta 112), pack-reused 0[K
+Receiving objects:  84% (200/237)Receiving objects:  85% (202/237)Receiving objects:  86% (204/237)Receiving objects:  87% (207/237)Receiving objects:  88% (209/237)Receiving objects:  89% (211/237)Receiving objects:  90% (214/237)Receiving objects:  91% (216/237)Receiving objects:  92% (219/237)Receiving objects:  93% (221/237)Receiving objects:  94% (223/237)Receiving objects:  95% (226/237)Receiving objects:  96% (228/237)Receiving objects:  97% (230/237)Receiving objects:  98% (233/237)Receiving objects:  99% (235/237)Receiving objects: 100% (237/237)Receiving objects: 100% (237/237), 1.43 MiB | 5.02 MiB/s, done.
+Resolving deltas:   0% (0/126)Resolving deltas:   1% (2/126)Resolving deltas:   2% (3/126)Resolving deltas:   3% (4/126)Resolving deltas:   4% (6/126)Resolving deltas:   5% (7/126)Resolving deltas:  10% (13/126)Resolving deltas:  27% (35/126)Resolving deltas:  28% (36/126)Resolving deltas:  30% (39/126)Resolving deltas:  31% (40/126)Resolving deltas:  40% (51/126)Resolving deltas:  48% (61/126)Resolving deltas:  49% (62/126)Resolving deltas:  50% (63/126)Resolving deltas:  53% (67/126)Resolving deltas:  54% (69/126)Resolving deltas:  57% (72/126)Resolving deltas:  60% (76/126)Resolving deltas:  62% (79/126)Resolving deltas:  75% (95/126)Resolving deltas:  82% (104/126)Resolving deltas:  85% (108/126)Resolving deltas:  86% (109/126)Resolving deltas:  88% (111/126)Resolving deltas:  90% (114/126)Resolving deltas:  91% (115/126)Resolving deltas:  93% (118/126)Resolving deltas:  95% (120/126)Resolving deltas:  96% (122/126)Resolving deltas:  99% (125/126)Resolving deltas: 100% (126/126)Resolving deltas: 100% (126/126), done.
+travis_time:end:0e95ea36:start=1582575957187065000,finish=1582575958014968000,duration=827903000,event=checkout[0K$ cd mogobams/sdp-prac-2
+$ git checkout -qf 875bc2e200dfacb2d5055172c7e43b19aeec366e
+travis_fold:end:git.checkout[0K
+travis_time:end:0e95ea36:start=1582575957187065000,finish=1582575958080018000,duration=892953000,event=checkout[0Ktravis_time:start:08397987[0Ktravis_time:end:08397987:start=1582575958089806000,finish=1582575958107848000,duration=18042000,event=env[0Ktravis_time:start:11947d46[0K$ mono --version
+Mono JIT compiler version 6.8.0.105 (2019-10/82fffe07497 Tue Feb  4 10:09:51 EST 2020)
+Copyright (C) 2002-2014 Novell, Inc, Xamarin Inc and Contributors. www.mono-project.com
+	TLS:           
+	SIGSEGV:       altstack
+	Notification:  kqueue
+	Architecture:  amd64
+	Disabled:      none
+	Misc:          softdebug 
+	Interpreter:   yes
+	LLVM:          yes(610)
+	Suspend:       hybrid
+	GC:            sgen (concurrent by default)
+travis_time:end:11947d46:start=1582575958117789000,finish=1582575958169935000,duration=52146000,event=announce[0Ktravis_time:start:1a21c37a[0K$ msbuild /version
+[?1h=[6n[H[2JMicrosoft (R) Build Engine version 16.5.0-ci for Mono
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+16.5.0.7801[?1l>[39;49mtravis_time:end:1a21c37a:start=1582575958179885000,finish=1582575959872607000,duration=1692722000,event=announce[0K
+travis_time:start:03ac5fa8[0K$ dotnet --info
+.NET Core SDK (reflecting any global.json):
+ Version:   3.1.101
+ Commit:    b377529961
+
+Runtime Environment:
+ OS Name:     Mac OS X
+ OS Version:  10.13
+ OS Platform: Darwin
+ RID:         osx.10.13-x64
+ Base Path:   /usr/local/share/dotnet/sdk/3.1.101/
+
+Host (useful for support):
+  Version: 3.1.1
+  Commit:  a1388f194c
+
+.NET Core SDKs installed:
+  3.1.101 [/usr/local/share/dotnet/sdk]
+
+.NET Core runtimes installed:
+  Microsoft.AspNetCore.App 3.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.App]
+  Microsoft.NETCore.App 3.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
+
+To install additional .NET Core runtimes or SDKs:
+  https://aka.ms/dotnet-download
+travis_time:end:03ac5fa8:start=1582575959882500000,finish=1582575960126092000,duration=243592000,event=announce[0K
+travis_time:start:017dbc06[0K$ dotnet test Problems.Tests
+
+Welcome to .NET Core 3.1!
+---------------------
+SDK Version: 3.1.101
+
+----------------
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Find out what's new: https://aka.ms/dotnet-whats-new
+Learn about the installed HTTPS developer cert: https://aka.ms/aspnet-core-https
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli-docs
+Write your first app: https://aka.ms/first-net-core-app
+--------------------------------------------------------------------------------------
+[?1h=[?1h=[?1h=[?1h=Test run for /Users/travis/build/mogobams/sdp-prac-2/Problems.Tests/bin/Debug/netcoreapp3.1/Problems.Tests.dll(.NETCoreApp,Version=v3.1)
+Microsoft (R) Test Execution Command Line Tool Version 16.3.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+
+A total of 1 test files matched the specified pattern.
+[?1h=[6n[6n[1;1H
+[39;49m[32mTest Run Successful.
+[39;49m[39;49mTotal tests: 3
+[39;49m[39;49m[32m     Passed: 3
+[39;49m[39;49m Total time: 2.0050 Seconds
+[39;49m[?1h=[?1h=travis_time:end:017dbc06:start=1582575960136338000,finish=1582575998866268000,duration=38729930000,event=script[0K[32;1mThe command "dotnet test Problems.Tests" exited with 0.[0m
+
+
+Done. Your build exited with 0.
