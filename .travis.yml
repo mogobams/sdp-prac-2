@@ -1,0 +1,10 @@
+language: csharp
+dotnet: 16.4.5
+script:
+   dotnet test Problems.Tests
+matrix:
+   include:
+      - dist: xenial
+      - dist: bionic
+      - dotnet: 16.4.5
+      - os: osx
